@@ -1,5 +1,5 @@
 {
-  "name": "nasa-node-project",
+  "name": "nasa-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,17 +11,11 @@
     "client": "npm start --prefix client",
     "watch": "npm run server & npm run client",
     "deploy": "npm run build --prefix client && npm start --prefix server",
-    "test": "npm run test --prefix server && npm run test --prefix client"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/akhil-goyal/mern-nasa-project.git"
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
+    "test": "npm test --prefix server && npm test --prefix client"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/akhil-goyal/mern-nasa-project/issues"
-  },
-  "homepage": "https://github.com/akhil-goyal/mern-nasa-project#readme"
+  "dependencies": {}
 }
